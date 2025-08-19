@@ -1,0 +1,231 @@
+/* Container */
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #121212; /* dark background */
+  min-height: 100vh;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form */
+.userprofileform form {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.6);
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* Heading */
+.userprofileform form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #f9f9f9;
+}
+
+/* Rows (2 inputs side by side) */
+.userprofileform .row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.userprofileform .row > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.userprofileform label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #cfcfcf;
+}
+
+/* Inputs */
+.userprofileform input {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.userprofileform input::placeholder {
+  color: #888;
+}
+
+.userprofileform input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.6);
+}
+
+/* File input */
+.userprofileform input[type="file"] {
+  border: none;
+  padding: 0;
+  color: #ccc;
+}
+
+.userprofileform img {
+  margin-top: 0.8rem;
+  max-width: 120px;
+  border: 2px solid #4a90e2;
+}
+
+/* Button */
+.userprofileform button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #4a90e2;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1.2rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.userprofileform button:hover {
+  background-color: #357ab8;
+  transform: translateY(-2px);
+}
+
+.userprofileform button:active {
+  transform: translateY(0);
+}
+.userprofileform .profile-photo {
+  width: 120px;      /* fixed width */
+  max-height: 150px;     /* fixed height */
+  object-fit: cover;  /* ensures the image fills the box without distortion */
+  border: 2px solid #444; /* optional border */
+}
+.userprofileform .avatarfile{
+    padding-bottom: 1.5rem;
+}
+/* Dropdown (select) */
+.userprofileform select {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  appearance: none; /* removes default arrow styling */
+  cursor: pointer;
+}
+
+.userprofileform select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.6);
+}
+
+.userprofileform select option {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+/* Radio buttons */
+.userprofileform input[type="radio"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #555;
+  border-radius: 50%;
+  background-color: #2a2a2a;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: border 0.2s, background 0.2s;
+  position: relative;
+}
+
+.userprofileform input[type="radio"]:checked {
+  border-color: #4a90e2;
+  background-color: #4a90e2;
+}
+
+.userprofileform input[type="radio"]::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  display: none;
+}
+
+.userprofileform input[type="radio"]:checked::after {
+  display: block;
+}
+
+.userprofileform input[type="radio"] + label {
+  margin-right: 1.2rem;
+  color: #cfcfcf;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* Textarea */
+.userprofileform textarea {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  font-size: 0.95rem;
+  min-height: 100px;
+  resize: vertical;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.userprofileform textarea::placeholder {
+  color: #888;
+}
+
+.userprofileform textarea:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.6);
+}
+.userprofileform .radio{
+    display: flex;
+    flex-direction: row;
+}
+.userprofileform .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.userprofileform .form-label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ddd; /* for dark theme */
+}
+
+.userprofileform .form-textarea {
+  width: 100%;
+  min-height: 120px;  /* increase size */
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background-color: #222; /* dark theme */
+  color: #fff;
+  font-size: 14px;
+  resize: vertical; /* user can resize */
+}

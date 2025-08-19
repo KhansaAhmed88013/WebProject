@@ -1,0 +1,174 @@
+/* Container styling */
+.ListBusinessSection {
+  padding: 40px 20px;
+  background-color: #121212; /* Dark background */
+  min-height: 100vh;
+}
+
+/* Heading styling */
+.business-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #f5f5f5; /* Light text */
+  margin-bottom: 40px;
+  border-bottom: 3px solid #ff9800;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* Cards container */
+.ListBusines-Container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Single card styling */
+.ListBusines-Card {
+  width: 300px;
+  background: #1e1e1e; /* Card background */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  transition: 0.3s ease;
+}
+
+.ListBusines-Card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 152, 0, 0.2); /* Orange highlight */
+}
+
+/* Image section */
+.Card-img {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Description section */
+.Card-description {
+  padding: 15px;
+  color: #e0e0e0;
+}
+
+.Card-description h4 {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.Card-description p {
+  margin: 4px 0;
+  color: #bbbbbb;
+}
+
+/* Sub-description inside card */
+.card-subdescription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #cccccc;
+}
+
+/* Rating badge */
+.rating {
+  background: #ff9800;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #000;
+}
+/* Main row layout: side-by-side */
+.ListBusiness-Row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start; /* align top */
+  flex-wrap: nowrap;
+}
+
+/* Left side: cards (50% width, no scroll) */
+.ListBusiness-Left {
+  flex: 1;
+  min-width: 50%;
+  padding-right: 10px;
+}
+
+/* Right side: fixed height map */
+.ListBusiness-Map {
+  flex: 1;
+  min-width: 50%;
+  height: 600px; /* or set max-height if needed */
+  background-color: #121212;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Grid layout: 2 cards per row */
+.ListBusines-Container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px;
+}
+
+/* Card styling (unchanged) */
+.ListBusines-Card {
+  background: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.ListBusines-Card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 152, 0, 0.2);
+}
+
+.Card-img {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.Card-description {
+  padding: 15px;
+  color: #e0e0e0;
+}
+
+.Card-description h4 {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.card-subdescription {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.rating {
+  background: #ff9800;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #000;
+}
+
+
+.Card-img{
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  background-size: contain;  /* fit entire image inside */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat; /* don't repeat */
+
+}

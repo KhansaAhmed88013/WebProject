@@ -1,0 +1,49 @@
+.footer-logo {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.footer-link {
+    color: #bbb;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social-icon {
+    font-size: 1.3rem;
+    color: #bbb;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #fff;
+}
+
+.footer-bottom-bar {
+    background-color: #242222; /* darker than bg-dark (#212529) */
+    font-size: 0.9rem;
+}
+
+@media (max-width: 576px){
+    img .footer-logo{
+        width: 70px;
+        height: 70x;
+    }
+    .footer-link{
+        font-size: 0.6rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    h5{
+        font-size: 0.9rem;
+    }
+}

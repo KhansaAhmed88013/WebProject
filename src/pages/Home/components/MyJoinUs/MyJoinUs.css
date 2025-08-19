@@ -1,0 +1,74 @@
+.join-us-wrapper {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.413); /* dark overlay */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.join-us {
+    padding: 2rem;
+    z-index: 1;
+}
+
+.join-us h2{
+    color: aliceblue;
+    font-weight: 400;
+}
+.join-us h5,
+.join-us p {
+    color: rgb(201, 203, 205);
+}
+.join-us-wrapper h5{
+    margin-bottom: 1.5rem;
+}
+.join-us p{
+    font-size: .9rem;
+}
+@media (max-width: 768px) {
+    .join-us h2 {
+        font-size: 1.5rem;
+    }
+
+    .join-us p {
+        font-size: 0.7rem;
+    }
+
+    .join-us h5 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .join-us-wrapper {
+    height: 50vh;
+}
+    .join-us h2 {
+        font-size: 1.2rem;
+    }
+
+    .join-us p {
+        font-size: 0.6rem;
+    }
+
+    .join-us h5 {
+        font-size: 0.9rem;
+    }
+}

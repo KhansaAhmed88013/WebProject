@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.ListingHeader{
+    padding-top: 100px;
+    background-color: #121212; /* dark background */
+    color: #f9fafb;
+}
+
+.listing-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222; /* Dark background */
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.listing-header-top .heading {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.listing-header-top .breadcrumb {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+.listing-header-top .breadcrumb span{
+    color: aquamarine;
+    padding-left: 10px;
+}
+.categoryform{
+    padding: 2rem 0;
+}
+.listing-card {
+  background-color: #2b2b2b;
+  border: 1px solid #3a3a3a;
+  border-radius: 12px;
+  padding: 1.2rem;
+  width: 220px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.listing-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: #ffffff;
+}
+
+.card-hover-text {
+  font-size: 0.9rem;
+  color: #bbbbbb;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 0.3rem;
+}
+
+.listing-card:hover .card-hover-text {
+  opacity: 1;
+  max-height: 100px; /* enough space for 1-2 lines of text */
+}

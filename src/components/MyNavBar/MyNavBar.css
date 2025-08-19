@@ -1,0 +1,235 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.imglogo {
+  width: 70px;
+  height: auto;
+}
+
+.my-navbar {
+  z-index: 9999;
+}
+
+/* Navbar Navigation Styling */
+.navbar-nav {
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link,
+.dropdown-item {
+  position: relative;
+  color: #898686;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  white-space: nowrap;
+  background-color: transparent;
+}
+
+.navbar-nav .nav-link::before,
+.dropdown-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 80%;
+  background-color: red;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.navbar-nav .nav-link:hover::before,
+.dropdown-item:hover::before {
+  opacity: 1;
+}
+
+.dropdown-item:hover {
+  color: #b6b9bc !important;
+}
+
+/* Button Styling */
+.navbar .btn-warning,
+.btn-warning {
+  padding: 0.3rem 0.7rem;
+  font-size: 0.9rem;
+  width: 120px;
+  margin-left: 0.5rem;
+}
+
+/* Submenu Styling */
+.submenu-toggle {
+  position: relative;
+}
+
+.dropdown-item-with-arrow {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Wrapper to prevent flicker */
+.hover-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.submenu-wrapper {
+  position: relative;
+  display: block;
+}
+
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: -2px;
+  min-width: 200px;
+  background-color: #212529;
+  border: 1px solid #444;
+  padding: 0.5rem 0;
+  z-index: 10000;
+}
+
+.submenu .dropdown-item {
+  position: relative;
+  white-space: nowrap;
+  padding: 0.5rem 1.5rem;
+  color: rgb(243, 243, 234);
+  background-color: transparent;
+}
+
+.submenu .dropdown-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 80%;
+  background-color: red;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.submenu .dropdown-item:hover::before {
+  opacity: 1;
+}
+
+.submenu .dropdown-item:hover {
+  background-color: #343a40;
+  color: #b6b9bc;
+}
+
+/* 👤 Custom user menu */
+.custom-user-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #212529;
+  border: 1px solid #444;
+  padding: 0.5rem 0;
+  z-index: 10001;
+  min-width: 150px;
+}
+
+.custom-user-menu .dropdown-item {
+  position: relative;
+  color: #343a40 !important;
+  padding: 0.5rem 1.25rem;
+  background-color: transparent !important;
+}
+
+.custom-user-menu .dropdown-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 80%;
+  background-color: red;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.custom-user-menu .dropdown-item:hover::before {
+  opacity: 1;
+}
+
+.custom-user-menu .dropdown-item:hover {
+  color: #343a40 !important;
+}
+
+/* Desktop View */
+@media (min-width: 992px) {
+  .navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .d-flex.align-items-center.ms-auto {
+    margin-left: 0 !important;
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 991px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .dropdown-menu,
+  .dropdown-item,
+  .dropdown-item-with-arrow {
+    text-align: center;
+    width: 70%;
+    justify-content: center;
+  }
+
+  .submenu {
+    position: relative;
+    top: 0;
+    left: 0;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+  }
+
+  .submenu .dropdown-item {
+    padding-left: 1rem;
+    color: #212529;
+  }
+
+  .navbar .btn-warning {
+    margin: 10px auto;
+    display: block;
+  }
+
+  .navbar-collapse,
+  .nav-item.dropdown,
+  .nav-item.dropdown .dropdown-menu {
+    text-align: center;
+    width: 100%;
+  }
+}

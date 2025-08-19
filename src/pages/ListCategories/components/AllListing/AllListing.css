@@ -1,0 +1,64 @@
+.listing-section {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.group-section {
+  margin-bottom: 3rem;
+}
+
+.listing-section-heading {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  border-bottom: 2px solid #444;
+  padding-bottom: 0.5rem;
+  color: #f9f9f9;
+}
+
+.listing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.listing-card {
+  background-color: #2b2b2b;
+  border: 1px solid #3a3a3a;
+  border-radius: 12px;
+  padding: 0.8rem;
+  width: 200px;
+  transition: transform 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.listing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 6px rgba(69, 136, 165, 0.5);
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #c6c0c0;
+}
+.card-hover-text {
+  font-size: 0.9rem;
+  color: #bbbbbb;
+  margin-top: 0.3rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  height: 1.5em; /* Reserve space */
+  visibility: hidden; /* Hide from view */
+}
+
+.listing-card:hover .card-hover-text {
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,0 +1,280 @@
+/* 🌙 Minimalistic Dark Theme */
+.editformContainer{
+  margin-top: 50px;
+  background-color: #282829;
+}
+.editfrom {
+  padding-top: 30px;
+  background-color: #0f11157e;
+  color: #f5f5f5;
+  padding: 24px;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Form layout */
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Labels */
+.editfrom label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #cfcfcf;
+}
+
+/* Inputs, selects, textareas */
+.editfrom input,
+.editfrom select,
+.editfrom textarea,
+.react-select__control {
+  background-color: #181a1f;
+  border: 1px solid #2a2d34;
+  color: #f5f5f5;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.editfrom input:focus,
+.editfrom select:focus,
+.editfrom textarea:focus {
+  border-color: #3a82f6;
+  background-color: #1c1f26;
+  outline: none;
+}
+
+/* React Select Dark Mode */
+.react-select__control {
+  background-color: #181a1f !important;
+  border-color: #2a2d34 !important;
+}
+.react-select__menu {
+  background-color: #181a1f !important;
+}
+.react-select__option {
+  color: #f5f5f5 !important;
+}
+.react-select__option--is-focused {
+  background-color: #2a2d34 !important;
+}
+.react-select__single-value {
+  color: #f5f5f5 !important;
+}
+
+/* React Quill */
+.dark-quill .ql-toolbar {
+  background-color: #181a1f;
+  border: 1px solid #2a2d34;
+}
+.dark-quill .ql-container {
+  background-color: #181a1f;
+  color: #f5f5f5;
+  border: 1px solid #2a2d34;
+}
+
+/* Business hours table */
+.business-hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.business-hours-table th,
+.business-hours-table td {
+  border: 1px solid #2a2d34;
+  padding: 8px;
+}
+.business-hours-table th {
+  background-color: #181a1f;
+  color: #f5f5f5;
+  font-weight: 600;
+}
+.business-hours-table td select {
+  background-color: #181a1f;
+  color: #f5f5f5;
+  border: 1px solid #2a2d34;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+/* Buttons */
+.editfrom button {
+  background-color: #3a82f6;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.25s ease, transform 0.1s ease;
+}
+.editfrom button:hover {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+/* Amenities checkboxes */
+.amenities label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+  gap: 6px;
+  font-size: 14px;
+  color: #ddd;
+}
+.amenities input[type="checkbox"] {
+  accent-color: #3a82f6;
+}
+
+/* Section headings */
+.section-heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+/* Scrollbar */
+.editfrom::-webkit-scrollbar {
+  width: 6px;
+}
+.editfrom::-webkit-scrollbar-thumb {
+  background: #3a82f6;
+  border-radius: 3px;
+}
+/* === LABELS === */
+.editfrom label {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #f1f1f1;
+  margin-bottom: 4px;
+}
+
+.editfrom h3,
+.editfrom h4 {
+  margin-top: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  border-left: 4px solid #3a82f6;
+  padding-left: 8px;
+  font-size: 16px;
+}
+
+/* === SECTION WRAPPER === */
+.menu-section {
+  background-color: #16181d;
+  border: 1px solid #2a2d34;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* === SECTION TITLE === */
+.menu-section input[placeholder="Section title"] {
+  background-color: #181a1f;
+  border: 1px solid #2a2d34;
+  color: #f5f5f5;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* === MENU ITEM ROW === */
+.menu-item {
+  display: grid;
+  grid-template-columns: 1fr 120px 1.5fr;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.menu-item input {
+  background-color: #181a1f;
+  border: 1px solid #2a2d34;
+  color: #f5f5f5;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+
+
+/* === FORM SPACING FIX === */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+/* === ACTION BUTTONS (Add / Remove) - Minimal Look === */
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin: 4px 6px 8px 0;
+  background-color: #1f2127;
+  color: #d1d5db;
+  border: 1px solid #2a2d34;
+}
+
+.action-btn.add {
+  border-color: #85a9e2; /* blue accent */
+}
+.action-btn.add:hover {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+}
+
+.action-btn.remove {
+  border-color: #9ca3af; /* muted gray accent */
+}
+.action-btn.remove:hover {
+  background-color: rgba(156, 163, 175, 0.15);
+  color: #e5e7eb;
+}
+
+/* === UPDATE BUTTON - Premium Look === */
+.update-btn {
+  background: #3b82f6;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.25s ease;
+  display: inline-block;
+  margin-top: 20px;
+}
+.update-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+.editfrom img{
+  width: 200px;
+}
