@@ -1,7 +1,7 @@
 // userService.js
 import axios from 'axios';
 
-const API_BASE_URL = "https://web-project-a0tfsdv69-khansa-ahmeds-projects.vercel.app";
+const API_BASE_URL = "https://webproject-backend-production.up.railway.app";
 
 export const addUser = async (userData) => {
   try {
